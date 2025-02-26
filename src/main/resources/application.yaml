@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: monitor-service
+  datasource:
+#    url: jdbc:postgresql://localhost:5432/sensors_db
+#    username: admin
+#    password: secret
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+  liquibase:
+    change-log: classpath:/db/changelog/db.changelog-master.yaml
+  jpa:
+    hibernate:
+      ddl-auto: none
