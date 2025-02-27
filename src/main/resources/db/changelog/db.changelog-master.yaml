@@ -1,5 +1,0 @@
-databaseChangeLog:
-  - include:
-      file: classpath:/db/changelog/v1__initial_schema.sql
-  - include:
-      file: classpath:/db/changelog/v2__create_users.sql
