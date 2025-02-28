@@ -33,7 +33,7 @@ services:
   monitor-sensors:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: main-service/Dockerfile
     container_name: monitor-sensors
     ports:
       - "8080:8080"
